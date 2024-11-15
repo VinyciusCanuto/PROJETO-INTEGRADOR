@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import { MapPin, Clock, Package } from 'lucide-react';
+import Navbar from './Components/Navbar.jsx';
 
 const Container = styled.div`
   display: flex;
@@ -156,6 +157,7 @@ const Calculadora = () => {
 
   return (
     <Container>
+      <Navbar />
       <CalculatorCard>
         <LeftPanel>
           <Title>Calculadora de Entregas</Title>

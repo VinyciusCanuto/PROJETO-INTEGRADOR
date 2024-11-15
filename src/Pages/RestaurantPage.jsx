@@ -1,6 +1,7 @@
 import { styled } from 'styled-components';
 import { breakpoints } from './breakpoints.js'
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Components/Navbar.jsx';
 
 const Banner = styled.div`
   height: 200px;
@@ -81,6 +82,7 @@ function RestaurantPage() {
 
   return (
     <div>
+      <Navbar />
       <Banner />
       <RestaurantName>McDonalds - Mdm - Maceió Drive Menino Marcelo</RestaurantName>
       <SearchBar placeholder="Buscar produtos" />

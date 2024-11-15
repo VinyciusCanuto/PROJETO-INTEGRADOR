@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Navbar from './Components/Navbar.jsx';
 
 const Container = styled.div`
   display: flex;
@@ -72,6 +73,7 @@ const Button = styled.button`
 const TabelaPreco = () => {
   return (
     <Container>
+      <Navbar />
       <TableCard>
         <Title>Tabela de Valor por Peso</Title>
         <Table>

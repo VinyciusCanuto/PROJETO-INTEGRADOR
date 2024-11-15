@@ -1,6 +1,7 @@
 import { styled } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { breakpoints } from './breakpoints.js';
+import Navbar from '../Components/Navbar.jsx'
 
 const Title = styled.h2`
   margin-bottom: 20px;
@@ -64,6 +65,7 @@ function HomePage() {
 
   return (
     <div>
+      <Navbar />
       <Title>Restaurantes Famosos</Title>
       <RestaurantList>
         {restaurants.map(restaurant => (
